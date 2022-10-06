@@ -10,7 +10,7 @@
 <img width="1013" alt="Screen Shot 2022-10-06 at 4 09 14 PM" src="https://user-images.githubusercontent.com/58461444/194434631-6158497d-4883-43aa-a25d-369afa089d8a.png">
 
 ## 2. Open with VSCode
-- Once you've cloned our website template, open it in VSCode
+- Once you've cloned our website template, open **the folder** in VSCode
 <img width="510" alt="Screen Shot 2022-10-06 at 4 11 25 PM" src="https://user-images.githubusercontent.com/58461444/194434835-04d6610e-2971-461e-89a1-09288c247e04.png">
 
 # II. Run website locally
