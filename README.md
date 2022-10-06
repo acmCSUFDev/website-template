@@ -1,48 +1,26 @@
-# Svelte + Vite
+# Portfolio Website Template with Svelte
+> acmDev website template for [guided project Fall 2022](https://github.com/acmCSUFDev/intro-to-web-dev)
 
-This template should help get you started developing with Svelte in Vite.
+# I. Getting Started
+## 1. Clone the repo ( 2 ways )
+1. Using Git ( You'll need to [Download Git](https://git-scm.com/downloads) first ) 
+- Type the command ```git clone https://github.com/acmCSUFDev/website-template.git``` in your terminal to clone
 
-## Recommended IDE Setup
+2. Download the ZIP file from this repo ( Beginner Friendly )
+<img width="1013" alt="Screen Shot 2022-10-06 at 4 09 14 PM" src="https://user-images.githubusercontent.com/58461444/194434631-6158497d-4883-43aa-a25d-369afa089d8a.png">
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## 2. Open with VSCode
+- Once you've cloned our website template, open it in VSCode
+<img width="510" alt="Screen Shot 2022-10-06 at 4 11 25 PM" src="https://user-images.githubusercontent.com/58461444/194434835-04d6610e-2971-461e-89a1-09288c247e04.png">
 
-## Need an official Svelte framework?
+# II. Run website locally
+## 1. [Install Node.js](https://nodejs.org/en/)
+## 2. In your VSCode, open Terminal and type 
+```npm install``` 
+## 3. After npm install, you should see a file call node_modules
+## 4. Run your website by typing and click on the link provided 
+``` npm run dev ```
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+<img width="1302" alt="Screen Shot 2022-10-06 at 4 17 18 PM" src="https://user-images.githubusercontent.com/58461444/194435735-d87c34de-3325-491f-80c8-824592222ecb.png">
 
-## Technical considerations
 
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
