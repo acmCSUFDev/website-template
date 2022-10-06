@@ -17,7 +17,7 @@
 ## 1. [Install Node.js](https://nodejs.org/en/)
 ## 2. In your VSCode, open Terminal and type 
 ```npm install``` 
-## 3. After npm install, you should see a file call node_modules
+## 3. After npm install, you should see a file called node_modules
 ## 4. Run your website by typing and click on the link provided 
 ``` npm run dev ```
 
